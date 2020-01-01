@@ -1,0 +1,334 @@
+body {
+    margin: 0;
+    font-family: "lato", serif;
+    font-weight: 400;
+    color: black;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.navbar {
+    box-shadow: 2px -3px 22px 1px black;
+    margin: 0;
+    margin-top:0;
+    z-index: 2 !important;
+    position:fixed;
+    width:100vw;
+
+}
+
+.active a {
+    background-color: black !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.hero {
+    margin:0;
+    width:100vw;
+    min-height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align:center;
+    z-index: 0;
+}
+
+.hero.index {
+    background-image:  url("ctf_background.jpg");
+    background-color: #222;
+    background-position: top;
+    align-items:center;
+    color:#fff;
+}
+
+.hero.cv {
+    background-image:  url("1.jpg");
+    background-color: #222;
+    background-position: center;
+    align-items:flex-end;
+}
+
+.hero.goals {
+    background-image:  url("11.jpg");
+    background-color: #222;
+    background-position: center;
+    align-items:flex-start;
+}
+
+.hero-inner {
+    margin-top: auto;
+    z-index: 1;
+    padding: 5px;
+    padding-top:20px;
+    margin-bottom: 30px;
+}
+
+.container.outer {
+    width:100vw;
+    height: auto;
+    padding: 0;
+    display:flex;
+    flex-direction:column;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    /* Margins */
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#hero-button {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 0.4em;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Border styles */
+    border: 4px solid white;
+    border-radius: 20px;
+
+    /* Text styles */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    font-size: 1em;
+    margin-top: auto;
+    bottom:0;
+    padding: 1rem;
+    text-align: center;
+    height: 7em;
+    color: #8c8b8b;
+    width: auto;
+}
+
+#footer {
+  position: absolute;
+  width: 100%;
+}
+
+hr {
+    margin-top:1em;
+    margin-bottom:1em;
+    border-top: 1px solid #eee;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom:7em;
+}
+
+#main.container-fluid{
+    justify-content:space-between;
+    text-align:center;
+}
+
+.fa-7x{
+    padding:30px;
+    margin-bottom:0px;
+    color:black;
+}
+
+.subject{
+    text-align: justify;
+    padding:30px;
+}
+
+.row.parts{
+    border-bottom: 1px solid #eee;
+}
+
+.show-more{
+    color:black;
+    font-weight: 700;
+}
+
+A:hover { COLOR: #20c997; TEXT-DECORATION: none;}
+
+
+.cv-page, .goals-page{
+    background-color:white;
+    color:black;
+    width:auto;
+}
+
+.life-page{
+    text-align:center;
+    justify-content:center;
+
+}
+
+.cv-block{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.cv-block.info{
+    padding-top: 100px;
+}
+
+.cv-block.info h2{
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+
+.cv-block.info h3{
+    font-size: 1.6rem;
+}
+
+.cv-block.info .group{
+    margin: 0px;
+}
+
+.cv-block.info .group:not(:first-child){
+    margin-top: 90px;
+}
+
+.cv-block.info .group .period{
+    font-size: 1.2rem;
+    float: none;
+    font-weight: bold;
+    margin-top: 4px;
+    color: #6c757d;
+    opacity: 0.8;
+}
+
+.cv-block.info .group .organization{
+    font-size: 1em;
+    background-color: #0ea0ff;
+    display: inline-block;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 2em;
+}
+
+.cv-block.info .education.group .organization{
+    background-color: #20c997;
+}
+
+.cv-block.info .group .item{
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.cv-block.info .group h2 + .item{
+    padding-top:25px;
+    border-top: 1px solid #eee;
+}
+
+.cv-block.info .group .item .row{
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.cv-block.info .work-experience h3,
+.cv-block.info .education h3{
+    font-weight: bold;
+}
+
+.text-muted {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+@media(max-width: 576px){
+    .cv-page{
+        position: relative;
+        top:150px;
+        padding-top:0px;
+    }
+    .goals-page{
+        position: relative;
+        top:150px;
+        padding-top:0px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .sheet.cv-block.info, #dif_sheet.cv-block.info{
+        padding-top:50px;
+    }
+    .cv-page{
+        position: relative;
+        top:300px;
+        padding-top:0px;
+    }
+    .goals-page{
+        position: relative;
+        top:300px;
+        padding-top:0px;
+    }
+    .hero.cv{
+        background-size: contain;
+        background-position:top center;
+        position:relative;
+        min-height:300px
+    }
+    .hero.goals{
+        background-size: contain;
+        background-position:top center;
+        position:relative;
+        min-height:300px
+    }
+}
+
+@media(min-width: 768px){
+
+    .container{
+        width:auto;
+    }
+
+    .sheet.cv-block {
+        padding-bottom: 120px;
+        padding-top: 120px;
+        max-width: 650px;
+    }
+
+    .cv-block.info .group .period {
+        float: right;
+    }
+
+    .life-page{
+    position: relative;
+    max-width:992px;
+    margin-left:auto;
+    margin-right:auto;
+}
+}
+
+@media(min-width: 1200px){
+    .cv-page{
+        position: relative;
+        right:200px;
+    }
+    .goals-page{
+        position: relative;
+        left:200px;
+    }
+}
+
+
